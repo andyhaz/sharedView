@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  myView.h
 //  sharedViews
 //
 //  Created by andrew hazlett on 1/10/16.
@@ -8,10 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ViewController : NSViewController
+@interface myView : NSView {
+    NSMutableArray  * myLocation;
+}
 
-@property (retain) NSMutableArray *myData;
-
-- (IBAction)buttondown:(id)sender;
+@property (retain) NSMutableArray *ary;
 
 @end
